@@ -2,3 +2,7 @@
 .idea/
 __pycache__/
 *.pyc
+test copy.py
+test.py
+test1.py
+.env

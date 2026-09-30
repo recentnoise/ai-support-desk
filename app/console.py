@@ -40,3 +40,7 @@ def run_console(
         print(f"Время ответа: {result.elapsed_seconds:.2f} с")
         print_usage(result)
         print(f"ID ответа: {result.response_id}")
+        print(
+            f"Сообщений в истории: "
+            f"{result.history_messages}"
+        )
