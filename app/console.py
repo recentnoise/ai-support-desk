@@ -58,3 +58,11 @@ def run_console(
         print(f"Сообщений истории в запросе: {result.context_history_messages}")
         print(f"Сообщений истории отброшено: {result.removed_history_messages}")
         print(f"Оценка входных токенов до запроса: {result.estimated_prompt_tokens}")
+        print(
+            "Summary сохранено: "
+            f"{'да' if result.has_summary else 'нет'}"
+        )
+        print(
+            "Summary обновлено на этом ходу: "
+            f"{'да' if result.summary_updated else 'нет'}"
+        )
