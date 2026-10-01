@@ -55,3 +55,6 @@ def run_console(
         print(f"Время ответа: {result.elapsed_seconds:.2f} с")
         print_usage(result)
         print(f"ID ответа: {result.response_id}")
+        print(f"Сообщений истории в запросе: {result.context_history_messages}")
+        print(f"Сообщений истории отброшено: {result.removed_history_messages}")
+        print(f"Оценка входных токенов до запроса: {result.estimated_prompt_tokens}")
